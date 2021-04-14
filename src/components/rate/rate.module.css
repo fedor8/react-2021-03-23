@@ -1,0 +1,12 @@
+.rating {
+    width: 30px;
+    height: 30px;
+}
+
+.not-marked polygon{
+    fill: antiquewhite;
+}
+
+.marked polygon{
+    fill: red;
+}
