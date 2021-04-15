@@ -3,7 +3,8 @@ import style from './rate.module.css'
 
 export default function Rate(props) {
     function calculateColor(i) {
-        return props.value > (i + 1) || (i + 1 - props.value) < 0.5 ? style.marked : style.notMarked;
+        const starRating = i + 1;
+        return props.value > starRating || (starRating - props.value) < 0.5 ? style.marked : style.notMarked;
     }
 
     return (
